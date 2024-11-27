@@ -1,0 +1,493 @@
+/* FEATURES */
+
+/* .features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22181C;
+  height: 110vh;
+}
+
+.feature-container {
+  border: 1px solid;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-content {
+  border: 1px solid white;
+  width: 800px;
+  height: 520px;
+} */
+
+/* scroll */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #030712;
+}
+
+.wrapper {
+    /* border: 3px solid white; */
+  /* margin-top: 2rem; */
+  width: 230px; 
+  height: 70vh; 
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollTop {
+  to {
+    top: -200px;
+  }
+}
+
+@keyframes scrollBottom {
+  to {
+    bottom: -200px;
+  }
+}
+
+.itemTop,
+.itemBottom {
+  width: 200px;
+  height: 200px;
+  /* background-color: #e11d48; */
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.itemTop {
+  top: max(calc(200px * 8), 100%);
+  animation-name: scrollTop;
+}
+
+.itemBottom {
+  bottom: max(calc(200px * 8), calc(100% + 200px));
+  animation-name: scrollBottom;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+/* card img */
+
+.card1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Intramuros/Street.jpg);
+  border-radius: 5px;
+}
+.card2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Intramuros/intramuros.jpg);
+  border-radius: 5px;
+}
+.card3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Binondo/a-bigger-goodwill-arch.jpg);
+  border-radius: 5px;
+}
+.card4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Binondo/stat.jpg);
+  border-radius: 5px;
+}
+.card5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/birdseyeview.jpg);
+  border-radius: 5px;
+}
+.card6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/new1.jpg);
+  border-radius: 5px;
+}
+.card7 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/park.jpg);
+  border-radius: 5px;
+}
+.card8 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/connectorpark.jpg);
+  border-radius: 5px;
+}
+.card9 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/fortsantiagoasodjs.jpg);
+  border-radius: 5px;
+}
+.card10 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/nationansjdqwd.jpg);
+  border-radius: 5px;
+}
+.card11 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/sanagustininside.jpg);
+  border-radius: 5px;
+}
+.card12 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/new2.jpg);
+  border-radius: 5px;
+}
+.card13 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./cssimages/new3.jpg);
+  border-radius: 5px;
+}
+.card14 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Intramuros/street1.jpg);
+  border-radius: 5px;
+}
+.card15 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Binondo/entrance.jpg);
+  border-radius: 5px;
+}
+.card16 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Binondo/a-bigger-goodwill-arch.jpg);
+  border-radius: 5px;
+}
+
+
+
+/* Contact section */
+
+.contact-container {
+  width: 100wv;
+  height: 100vh;
+  color: white;
+}
+
+.contact-details {
+  /* border: 1px solid white; */
+  width: 75%;
+  height: 75%;
+}
+
+.features {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #22181C;
+  height: 110vh;
+}
+
+.feature-container {
+  /* border: 1px solid; */
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: center; */
+}
+
+.feature-content {
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 520px;
+  border-radius: 20px 20px;
+  background-image: url(./cssimages/imageedit_28_6611731124.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-content h1 {
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 7.5rem;
+  color: #fffff0;
+}
+
+.feature-content p {
+  text-align: center;
+  margin-top: 2rem;
+  color: #fffff0;
+}
+
+/* feature button */
+
+.tour-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fffff0;
+  box-shadow: inset 0 0 0 2px #22181C;
+  background-color: transparent;
+  height: 48px;
+  margin-top: 40px;
+}
+.feature-context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-button:hover {
+  color: #fffff0;
+  background-color: #22181C;
+}
+
+.tour-button a {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit color from button */
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+  background-color: #fffff0;
+  padding: 40px 20px;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-style: italic;
+  opacity: 80%;
+}
+
+.footer-left p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  opacity: 80%;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+}
+
+.footer-nav, .footer-social, .footer-contact {
+  margin-right: 20px;
+  position: relative; /* Required for the hover effect */
+}
+
+.footer-nav ul, .footer-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav li, .footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-nav a, .footer-social a {
+  color: #000;
+  text-decoration: none;
+  position: relative; /* Required for the hover effect */
+}
+
+.footer-nav a::after,
+.footer-social a::after,
+.footer-bottom a::after { /* Added for footer links */
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: black; /* Color of the underline */
+  left: 0;
+  bottom: -2px; /* Position the underline just below the text */
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.footer-nav a:hover::after,
+.footer-social a:hover::after,
+.footer-bottom a:hover::after { /* Added for footer links */
+  width: 100%; /* Full width underline on hover */
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #000;
+  text-decoration: none;
+  position: relative; /* Required for the hover effect */
+}
+
+.footer-bottom a:hover {
+  text-decoration: none; /* Remove default underline */
+}
+
+.footer-nav a {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+}
+
+.footer-social a {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+  opacity: 80%;
+}
+.footer-contact a {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+}
+
+.footer-nav h3 {
+  margin-bottom: 1.1rem;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+}
+.footer-social h3{
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+}
+.footer-contact h3 {
+  margin-bottom: 1.1rem;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+}
+.footer-contact p {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+}
+

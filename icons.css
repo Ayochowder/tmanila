@@ -1,0 +1,75 @@
+.wrapperr .button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    /* float: left; */
+    margin: 0 5px;
+    overflow: hidden;
+    background: #FFFFF0;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    font-family: "Open Sans", serif;
+    opacity: 75%;
+  }
+  .wrapperr .button:hover {
+    width: 200px;
+  }
+  .wrapperr .button .icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 20px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapperr .button:nth-child(1):hover .icon {
+    background: #22181C;
+  }
+  .wrapperr .button:nth-child(2):hover .icon {
+    background: #22181C;
+  }
+  .wrapperr .button:nth-child(3):hover .icon {
+    background: #22181C;
+  }
+  .wrapperr .button .icon i {
+    font-size: 20px;
+    line-height: 40px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapperr .button:hover .icon i {
+    color: #FFFFF0;
+  }
+  .wrapperr .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapperr .button:nth-child(1) span {
+    color: #22181C;
+  }
+  .wrapperr .button:nth-child(2) span {
+    color: #22181C;
+  }
+  .wrapperr .button:nth-child(3) span {
+    color: #22181C;
+  }
+
+  .wrapperr {
+    display: flex;
+    align-items: start;
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    left: 60px;
+  }
+
+  .wrapperr .button a {
+    text-decoration: none;
+    color: black;
+  }

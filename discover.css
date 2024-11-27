@@ -1,0 +1,158 @@
+
+
+.discover {
+    background-color: #fffff0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid black; */
+}
+
+/* .discover-head, .discover-foot {
+    background-color: #48482a;
+    color: white;
+    height: 100px;
+    width: 10vw;
+    position: fixed;
+    top: 50px;
+    z-index: 9999;
+} */
+
+.disco {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background: #fffff0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 150px;
+    margin-top: 10rem;
+}
+
+.disc-card {
+    width: 90%;
+    height: 100vh;
+    /* border: 1px solid; */
+    /* border-radius: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: auto;
+    /* margin-top: 2rem; */
+}
+
+
+.disc-picture {
+    /* border: 1px solid; */
+    width: 680px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border-radius: 50px; */
+    margin-bottom: 1rem;
+    /* margin-top: 10rem; */
+    /* background: black; */
+}
+
+.disc-content {
+    /* border: 1px solid; */
+    width: 700px;
+    height: 500px;
+}
+
+.content-heading {
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 800px;
+    
+}
+
+.content-heading h1 {
+    font-size: 4rem;
+    font-style: italic;
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    /* margin-top: 4rem; */
+    padding-left: 2rem;
+    opacity: 70%;
+}
+
+.content-paragraph {
+    /* border: 1px solid black; */
+    height: 300px;
+}
+
+.content-paragraph p {
+    font-size: 1em;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    /* margin-top: 0.5rem; */
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    padding: 20px 40px;
+    text-justify: inter-word;
+    opacity: 70%;
+}
+
+
+.disc-picture img {
+    border-radius: 20px;
+    position: absolute;
+    top: -20px;
+    left: 850px;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.ched1 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 10%;
+}
+
+.ched2 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 15%;
+}
+
+.ched3 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+
+.ched4 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
+}
+
+.ched5 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.ched6 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+

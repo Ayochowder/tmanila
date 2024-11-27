@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    overflow-x: hidden;
+    background: #fffff0;
+}
+
+.navlist a {
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-style: italic;
+    opacity: 65%;
+}
+
+.card-section1 h1 {
+    /* border: 1px solid; */
+    font-size: 15rem;
+    font-style: italic;
+    color: black;
+    letter-spacing: 15px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-paragraph{
+    color: black;
+}
+
+.hero-heading h1 {
+    opacity: 80%;
+}
+
+
+/* header */
+
+.header {
+    /* background-color: #001627; */
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* left: 7.5%; */
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 100px;
+}
+
+.navbar {
+    /* border: 2px solid; */
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; 
+}
+
+.logo {
+    /* border: 5px solid; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.logo-icon img {
+    position: absolute;
+    left: 80px;
+    top: 25px;
+
+}
+
+.logo-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-heading a h1 {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    opacity: 70%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navlist {
+    /* border: 5px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.navlist a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: 2px;
+    padding: 10px 15px; /* Add some padding for easier clicking */
+    position: relative;
+}
+
+/* .navlist a {
+    position: relative;
+    text-decoration: none; No underline by default
+    color:black; Adjust text color
+    padding: 10px 15px; Space for the link
+} */
+
+.navlist a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black; /* Color of the underline */
+    left: 0;
+    bottom: 0; /* Position the underline directly under the text */
+    transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.navlist a:hover::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+/* .logo-heading a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black; Color of the underline
+    left: 190px;
+    bottom: 15px; Position the underline directly under the text
+    transition: width 0.3s ease; Smooth transition effect
+}
+
+.logo-heading a:hover::after {
+    width: 12%; Full width underline on hover
+} */
+
+
+/* SECTION */
+
+
+.card {
+    width: 100;
+    max-width: 100%;
+    height: 100vh;
+    /* background: rgb(20, 50, 100 , 0.8); */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.hero-img1 {
+    position: absolute;
+    /* top: 10px; */
+    right: -10px;
+}
+
+
+.hero-img2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.card-1 {
+    /* border: 5px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffff0;
+    /* background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png"); */
+    /* opacity: 80%; */
+}
+
+.card-section1 {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 170px;
+    right: 180px;
+
+}
+
+.hero-paragraph {
+    /* border: 1px solid; */
+    position: relative;
+    top: 220px;
+    left: -350px;
+    letter-spacing: 3px;
+    opacity: 80%;
+}
+
+.hero-paragraph a {
+    text-decoration: none;
+    color: #22181C;
+}
+
+/* CARDS TYPOGRAPHY */
+
+.typo-container {
+    /* border: 5px solid black; */
+    position: relative;
+
+}
+
+
+.typo {
+    /* max-width: 100%; */
+    height: 800px;
+    /* border: 1px solid black; */
+    background-color: #fffff0;
+    /* background: rgb(20, 50, 100 , 0.8); */
+    color: black;
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 10px;
+}
+
+/* NATIONAL MUSEUM */
+.card-2{
+    width: 72%;
+    height: 600px;
+    /* border: 1px solid; */
+    margin-top: 2rem;
+    top: 55px;
+    
+}
+
+.card-2 h1 {
+    /* margin-top: 2rem; */
+    margin-left: 70px;
+    font-size: 5rem;
+    font-style: italic;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+/* SAN AGUSTIN */
+.card-3{
+    width: 75%;
+    /* border: 1px solid; */
+    /* margin-left: 100px; */
+    top: 155px;
+    height: 600px;
+}
+
+.card-3 h1 {
+    font-size: 5rem;
+    font-style: italic;
+    margin-left: 70px;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+/* BINONDO */
+
+.card-4{
+    width: 72%;
+    /* border: 1px solid; */
+    /* margin-left: 80px; */
+    top: 255px;
+    height: 600px;
+}
+
+.card-4 h1 {
+    font-size: 5rem;
+    font-style: italic;
+    margin-left: 70px;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+
+
+/* INTRAMUROS */
+.card-5{
+    width: 72%;
+    /* border: 1px solid; */
+    /* margin-left: 110px; */
+    top: 355px;
+    height: 600px;
+    
+}
+
+.card-5 h1 {
+    font-size: 5rem;
+    font-style: italic;
+    margin-left: 70px;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+
+/* FORT SANTIAGO */
+.card-6{
+    width: 72%;
+    /* border: 1px solid; */
+    /* margin-left: 140px; */
+    top: 455px;
+    height: 600px;
+}
+
+.card-6 h1 {
+    font-size: 5rem;
+    font-style: italic;
+    margin-left: 70px;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card-7 {
+    width: 72%;
+    top: 555px;
+    height: 600px;
+}
+
+.card-7 h1 {
+    font-size: 5rem;
+    font-style: italic;
+    margin-left: 70px;
+    color: black;
+    letter-spacing: 10px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card-8 {
+    width: 10px;
+    height: 600px;
+}
+
+.typo a {
+    opacity: 80%;
+}
+
+
+/* @keyframes slideInLeft{
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+.hero-heading2 a h1 {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+} */
+
+/* CARD HOVER */
+/* CARD HOVER */
+.typo a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/* When hovering over the container (.typo), blur all links */
+.typo:hover a {
+    opacity: 0.2; /* Set a lower opacity for all links */
+    filter: blur(5px); /* Apply blur to all links */
+}
+
+/* Keep the hovered link clear and focused */
+.typo a:hover {
+    opacity: 1; /* Full opacity for the hovered link */
+    filter: blur(0); /* Remove blur for the hovered link */
+    transform: scale(1.2); /* Slight zoom on hover */
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Create the background effect */
+.typo a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #BF211E;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+/* Background animation on hover */
+.typo a:hover:before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* Ensure only the hovered link is clear, and all others are blurred */
+.typo a:not(:hover) {
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+/* This additional rule applies blur to all other links */
+.typo:hover a:not(:hover) {
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+
+
+.features-home {
+    height: 150vh;
+    background-color: #22181C;
+    display: flex;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2rem; */
+}
+
+
+
+/* FEATURE HEADDD */
+
+
+
+/* FEATURE UP TYPOGRAPH */
+
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.content-heading {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.content-paragraph {
+    animation: appears linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.wrapperr {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+} */
+
+
+/* animation */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* .con {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+    animation-delay: 2s;
+
+} */
+
+.hero-heading2 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    animation-delay: 2s;
+
+}
+
+.hero-heading3 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    animation-delay: 2s;
+
+}
+.hero-heading4 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    animation-delay: 2s;
+
+}
+.hero-heading5 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    animation-delay: 2s;
+
+}
+.hero-heading6 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    animation-delay: 2s;
+
+}
+.hero-heading7 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+    animation-delay: 2s;
+
+}
